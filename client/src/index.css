@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%; /* Start from the top left */
+    }
+    25% {
+        background-position: 100% 100%; /* Move to the bottom right */
+    }
+    50% {
+        background-position: 0% 100%; /* Move to the bottom left */
+    }
+    75% {
+        background-position: 100% 0%; /* Move to the top right */
+    }
+    100% {
+        background-position: 0% 0%; /* Back to the starting position */
+    }
+}
+
+
+.animate-gradient {
+    background: linear-gradient(45deg, #000000, #111080);
+    background-size: 400% 400%; /* Increase the size for more movement */
+    animation: gradient-animation 17s ease infinite; /* Slower animation */
+}
+
+.animate-gradientfaster {
+    background: linear-gradient(45deg, #000000, #111080);
+    background-size: 400% 400%; /* Increase the size for more movement */
+    animation: gradient-animation 7s ease infinite; /* Slower animation */
+}
+
+
