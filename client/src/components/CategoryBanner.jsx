@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const CategoryBanner = () => {
   const location = useLocation();
   let category = { name: 'Category', image: 'https://via.placeholder.com/1920x1080?text=Category' };
-  let textColorClass = 'text-white'; // Default text color
+  let textColorClass = 'text-white';
 
   if (location.pathname.includes('/category/')) {
     const id = location.pathname.split('/category/')[1];
@@ -43,7 +43,7 @@ const CategoryBanner = () => {
       name: 'ON SALE %',
       image: '/sale.jpg'
     };
-    textColorClass = 'text-red-600'; // Apply red text for 'ON SALE'
+    textColorClass = 'text-red-600';
   } else if (location.pathname === '/products') {
     category = {
       name: 'All Products',

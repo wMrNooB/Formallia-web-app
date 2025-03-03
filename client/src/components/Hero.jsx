@@ -1,4 +1,3 @@
-'use client'
 import Categories from "./Categories";
 import Trending from "./Trending";
 import ShopCategories from "./ShopCategories";
